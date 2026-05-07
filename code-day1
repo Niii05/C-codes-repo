@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int age;
+    int rollno;
+    void study(){
+        cout<<name<< " is studying"<<endl;
+        
+        
+    }
+    };
+ int main(){
+    Student obj;
+    //dot operator - access data members and member func
+    obj.name = "Nandini gupta";
+    obj.age = 21;
+    obj.study();
+    return 0;
+}
