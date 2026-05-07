@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int rollno;
+    Student(){
+        cout<<"default";
+    }
+    Student(int a){
+        rollno = a;
+        cout<<rollno;
+    }
+    };
+ int main(){
+    Student obj(10);
+    
+    
+    //dot operator - access data members and member func
+    
+    
+    return 0;
+}
