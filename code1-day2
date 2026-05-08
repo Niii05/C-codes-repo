@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+//copy constructor
+class Student{
+    //properties
+    string name;
+    int age;
+    int roll_no;
+    
+    public:
+    Student(string n,int a , int r){
+        name =n;
+        age =a;
+        roll_no = r;
+    }
+    Student(Student &a){
+        name = a.name;
+        age = a.age;
+        roll_no = a.roll_no;
+        cout<< name<<" "<<age<<" "<<roll_no;
+    }
+    
+};
+int main(){
+    Student  obj1("nandini", 21 , 449);
+    Student obj2(obj1);
+    
+}
