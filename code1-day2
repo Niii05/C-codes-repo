@@ -26,3 +26,39 @@ int main(){
     Student obj2(obj1);
     
 }
+
+
+Q2. WAP for encapsulation and abstraction in C++
+
+#include<iostream>
+using namespace std;
+//encapsulation & abstraction
+class Student{
+    //properties
+    string name;
+    int age;    //encapsulation
+    public:
+    void setter(string n , int a){
+        name = n;
+        age =a;
+    }
+    
+      int getter(){
+        return age;
+    }
+    
+    void display(){
+        cout<<name<<" "<<age;
+    }
+    ~Student(){
+        cout<<"destructor called ";
+    }
+    
+};
+int main(){
+    Student obj1;
+    obj1.setter("nandini",21);
+    cout<<obj1.getter();
+    return 0;
+    
+}
