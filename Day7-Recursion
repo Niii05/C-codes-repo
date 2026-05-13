@@ -31,3 +31,20 @@ class Solution {
         return solve(n,0);
     }
 }
+
+
+Q3. WAP for printing FACTORIAL USING RECURSION (JAVA)
+
+class Solution {
+    // Function to calculate factorial of a number.
+    static int factorial(int n, int mul) {
+        // code here
+        if(n==1)
+            return mul;
+        mul = mul*n;
+        return factorial(n-1,mul);
+    }
+        static int factorial(int n){
+             return factorial(n, 1);
+        }
+}
