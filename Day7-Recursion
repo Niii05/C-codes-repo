@@ -13,3 +13,21 @@ int main(){
     int i=2;
     print(i,n);
 }
+
+Q2 WAP FOR SUM OF DISGIT USING RECURSION (JAVA)
+
+class Solution {
+    static int solve(int n, int sum)
+    {
+        if(n==0)
+        return sum;
+        
+        int rem = n%10;
+        sum += rem;
+        return solve(n/10,sum);
+    }
+    static int sumOfDigits(int n) {
+        // code here
+        return solve(n,0);
+    }
+}
